@@ -1,7 +1,7 @@
 # Idea
 Calculate the bricks needed for both increasing and decreasing order. 
 
-```{r}
+```R
 increase<- function(statues,len,diffs){
   num = 0;
   for(i in 1:length(diffs)){
