@@ -1,9 +1,9 @@
 # Idea
-Calculate the bricks needed for both increasing and decreasing order. <\br>
-For the increasing case, starting from the final lowest location i= 1<\br>
-Compare the adjacent brickss i and i+1; i.e.,  first and second brick, if the second one is larger, direction is desirable, brick 1 increases to brick 2 -1 or brick 2 increase to brick 1 +1; <\br>
+Calculate the bricks needed for both increasing and decreasing order. </br>
+For the increasing case, starting from the final lowest location i= 1</br>
+Compare the adjacent brickss i and i+1; i.e.,  first and second brick, if the second one is larger, direction is desirable, brick 1 increases to brick 2 -1 or brick 2 increase to brick 1 +1; </br>
 After the steps, all bricks are processed except the last one, if last one is higher than expected, all 1, to n-1 bricks increase brick[n]- tartget[n];
-else last is increased to expected <\br>
+else last is increased to expected </br>
 ```R
 increase<- function(statues,len,diffs){
   num = 0;
