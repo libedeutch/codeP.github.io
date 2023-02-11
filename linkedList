@@ -1,3 +1,21 @@
 Partition linkedlist: 
 For linked list, keep track of head, head records the starting of a list; 
 one pointer will move along the linked list; 
+# reverse linked list
+  tmp = [];
+        r = headA;
+        while r:
+            tmp.append(r.val); # traverse A 
+            r = r.next;
+        for i in range(len(tmp)-1,0,-1):
+            print(i);
+            if(i==len(tmp)-1):
+                Ahead = ListNode(tmp[i]);
+                rA = Ahead;
+                rA.next = ListNode(tmp[i-1]);
+            elif(i==0):
+                rA.next = None;
+            else:
+                rA.next = ListNode(tmp[i-1]);
+            rA = rA.next
+            print(Ahead);
